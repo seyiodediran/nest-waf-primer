@@ -19,7 +19,7 @@ export class AppController {
   }
 
   //Http Get route named Home
-  @Get('Home')
+  @Get('/')
   @Render('home.html')
   getHome(): {} {
     return this.appService.getHome();
