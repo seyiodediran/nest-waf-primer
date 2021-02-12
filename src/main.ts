@@ -25,7 +25,7 @@ async function bootstrap() {
   nunjucks.configure(views, {express});
 
   //we need to get directory name static
-  const staticAssets = join(__dirname, '..', 'static');
+  const staticAssets = join(__dirname, '..', '/static');
   app.useStaticAssets(staticAssets);
 
   //start the application
